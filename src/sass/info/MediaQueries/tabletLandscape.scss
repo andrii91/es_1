@@ -10,22 +10,26 @@
 
   #menu,
   .menu#menu {
-    display: block !important;
+    display: flex !important;
     text-align: right;
     position: static;
     transform: none;
     background: transparent;
     border-radius: 0;
     transition: 0;
-    max-width: 560px;
+    max-width: 700px;
+    min-width: auto;
+    width: 100%;
+    align-items: center;
 
     li {
       display: inline-block;
       vertical-align: middle;
-      margin: 0 40px 0 0;
+      margin: 0 10px 0;
       border: 0;
 
       a {
+        color: #19153E;
 
         &:not(.pricing-btn) {
           padding-left: 0;
@@ -77,12 +81,31 @@
   #menu,
   .menu#menu {
     margin-left: auto;
+    overflow: visible;
+    max-height: inherit;
   }
 
   #menu li .header__item,
   #menu li a,
   .menu#menu li .header__item,
-  .menu#menu li a {
+  .menu#menu li a,
+  .expand__item {
+    color: #19153E;
+
+    &:hover {
+      * {
+        color: #19153E;
+      }
+
+      a {
+        color: #19153E ;
+      }
+    }
+
+    &:after {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .fixed {
@@ -91,15 +114,109 @@
     #menu li a,
     .menu#menu li .header__item,
     .menu#menu li a {
+      color: #19153E;
     }
   }
 
-  .nav .expand__content {
-    min-height: 365px;
-    min-height: 310px;
+
+
+  #menu,
+  .menu#menu {
+    margin-left: auto;
+    margin-right: 0;
   }
+
+  .funnels_control-img {
+    overflow: hidden;
+    width: inherit;
+  }
+
+/*  nav .menu li .newmenu-link--bottom {
+    margin: 30px -18px -30px;
+    padding-right: 20px ;
+  }*/
+
+
+  nav .expand__item.active .expand__content {
+    display: block;
+    height: auto;
+    min-height: auto;
+    padding-top: 20px;
+
+    a {
+      color: #19153E ;
+    }
+  }
+
+  nav .expand__item {
+    .expand__content {
+      height: auto;
+      min-height: auto;
+      margin-right: -10px;
+    }
+
+    &:hover {
+      a {
+        color: #19153E ;
+      }
+    }
+  }
+
+  #menu li .header__item,
+  #menu li a,
+  .menu#menu li .header__item,
+  .menu#menu li a {
+    padding: 20px 20px;
+  }
+
+  .expand__item.active,
+  .expand__item:hover {
+    .header__item.current {
+      border: 0;
+    }
+  }
+
+  .header__item.current {
+    border-bottom: 4px solid #19153E;
+  }
+
+
 
   .container {
     max-width: 100%;
+  }
+  
+  .menu li a.newmenu-link--bottom {
+
+    margin-left: auto;
+    margin-right: 22px;
+    margin-top: -45px;
+  color: #fff !important;
+}
+  .newmenu-title {
+    padding-left: 10px;
+    color: #C6D1E2 !important;
+  }
+  .xs-first {
+    order: inherit;
+  }
+  .head .rating-item .title {
+//    width: inherit;
+  }
+  .head-list{
+    margin-top: 145px;
+    &:before {
+    content: "";
+    width: 80vw;
+    height: 100%;
+    min-height: 253px;
+    background: #0097e2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}}
+  
+  .head-item {
+    padding-top: 40px;
   }
 }

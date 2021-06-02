@@ -27,7 +27,7 @@
   font-family: Helvetica Now Display;
   src: url(../fonts/HelveticaNowDisplay-Bold.eot);
   src: url(../fonts/HelveticaNowDisplay-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/HelveticaNowDisplay-Bold.woff2) format("woff2"), url(../fonts/HelveticaNowDisplay-Bold.woff) format("woff"), url(../fonts/HelveticaNowDisplay-Bold.ttf) format("truetype");
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-display: swap
 }
@@ -1094,6 +1094,7 @@ body {
   height: 2px;
 }
 
+/*
 .home .hamburger-inner,
 .home .hamburger-inner:after,
 .home .hamburger-inner:before {
@@ -1106,6 +1107,7 @@ body {
   background-color: #000;
 }
 
+*/
 
 
 
@@ -1274,12 +1276,17 @@ body {
     left: 45.5%
   }
 
-
+ 
 
 
 }
 
-@import 'info/bootstrap';
+//@import 'info/bootstrap';
+@import 'bootstrap/bootstrap';
+
+@import 'info/qr';
+
+@import 'info/keyword';
 @import 'info/main';
 
 

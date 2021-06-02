@@ -8,7 +8,7 @@
 
   #nav-icon {
     float: right;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .mobile-vis {
@@ -271,5 +271,68 @@
       position: relative;
       z-index: 2;
     }
+  }
+
+  .xs-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .head {
+    padding-top: 115px;
+    padding-bottom: 50px;
+    overflow: hidden;
+
+    &-item {
+      padding: 18px 40px 31px;
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .rating-item {
+      flex-wrap: wrap;
+
+      .title {
+        margin-bottom: 15px;
+        width: 100%;
+      }
+    }
+
+    &-list {
+      margin: 0;
+      margin-left: 40px;
+      padding-left: 60px;
+      padding-right: 60px;
+
+      &:before {
+        top: -65px;
+      }
+
+      li {
+        a {
+          font-size: 36px;
+          line-height: 115%;
+          /* or 41px */
+        }
+      }
+    }
+
+  }
+  
+  .menu#menu {
+    min-width: inherit;
+  }
+  .expand__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .newmenu-title {
+    padding-left: 35px;
+  }
+  .head-title {
+    max-width: 440px;
   }
 }
