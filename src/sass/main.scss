@@ -1,5 +1,3 @@
-
-
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -1206,7 +1204,8 @@ body {
   }
 
   .modal {
-    z-index: 51
+    z-index: 51;
+    
   }
 
   .nav {
@@ -1276,7 +1275,7 @@ body {
     left: 45.5%
   }
 
- 
+
 
 
 }
@@ -1287,6 +1286,6 @@ body {
 @import 'info/qr';
 
 @import 'info/keyword';
+@import 'info/dashboards';
+//@import 'info/modal';
 @import 'info/main';
-
-

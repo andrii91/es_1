@@ -159,7 +159,7 @@
           <img class="xs-none" src="img/sect1img.webp" alt="">
           <img class="xs-block" src="img/sect1imgmob.webp" alt="">
         </div>
-<!--        <ul class="qr_code-list">
+        <!--        <ul class="qr_code-list">
           <li><img src="img/qr1.webp" alt=""></li>
           <li><img src="img/qr2.png" alt=""></li>
           <li><img src="img/qr3.png" alt=""></li>
@@ -172,19 +172,21 @@
         </div>
       </div>
     </div>
+
+
     <div class="qr_section qr_download">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-5 col-lg-5">
             <div class="h2-title">Download free product inserts templates</div>
             <div class="qr_download-img xs-block">
-              <img src="img/imgmob.png" alt="">
+              <img src="images/eliteseller-product-inserts-templates.webp" alt="Amazon thank you templates with QR Codes">
             </div>
-            <a href="https://eliteseller.com/blog/57-packaging-inserts-templates-ideas/" class="qr_head-btn " target="_blank">Download </a>
+            <a data-toggle="modal" data-target="#exampleModal" href="#exampleModal" class="qr_head-btn ">Download </a>
           </div>
           <div class="col-xl-7 xs-none col-lg-7">
             <div class="qr_download-img">
-              <img src="img/qr_donload-img.png" alt="">
+              <img src="images/eliteseller-product-inserts-templates.webp" alt="Amazon thank you templates with QR Codes">
             </div>
           </div>
         </div>
@@ -525,8 +527,52 @@
     </div>
   </footer>
 
+  <div class="popup" id="modal_qr">
+    <div class="madal_qr-img">
+      <img src="images/qr_modal_img.webp" alt="">
+    </div>
+    <h2 class="modal_qr-title">A pack of 75 Amazon packaging templates</h2>
+    <form action="#" id="modal_qr-form" method="post">
+      <div class="modal__form__block">
+        <label class="inp-form__wrapper label-parent valid-label">
+          <input type="email" name="email" class="inp-form inp-form_email" required="">
+          <span class="inp-form__label">Enter your email*</span>
+          <span class="inp-form__label label-err">Please enter correct email</span>
+        </label>
+      </div>
+
+      <div class="modal__form__buttons">
+        <button type="submit" class="btn btn-danger btn-submit-qr submit">Get it now</button>
+      </div>
+    </form>
+  </div>
 
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content my-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="madal_qr-img">
+          <img src="images/qr_modal_img.webp" alt="">
+        </div>
+        <h2 class="modal_qr-title">A pack of 75 Amazon packaging templates</h2>
+
+        <form action="#" id="qr_subscribe-form" class="needs-validation qr_subscribe-form" method="post" novalidate="">
+          <div class="form-group"> <input type="email" name="email" class="form-control form-control-lg inp-form" placeholder="Enter your email" required="required" id="contactEmail">
+            <div class="invalid-feedback"> Please enter your email</div>
+          </div>
+          <div class="modal__form__buttons">
+            <button type="submit" class="btn btn-danger btn-submit-qr submit">Get it now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
   <script defer src="js/vendor.js"></script>
   <script defer src="js/app.js"></script>
 </body>
