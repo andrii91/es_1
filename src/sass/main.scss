@@ -39,27 +39,6 @@
   font-display: swap
 }
 
-/*
-    @font-face {
-      font-family: Helvetica Now Display;
-      src: url(../fonts/HelveticaNowDisplay-Bold_1.eot);
-      src: url(../fonts/HelveticaNowDisplay-Bold_1.eot?#iefix) format("embedded-opentype"), url(../fonts/HelveticaNowDisplay-Bold_1.woff2) format("woff2"), url(../fonts/HelveticaNowDisplay-Bold_1.woff) format("woff"), url(../fonts/HelveticaNowDisplay-Bold_1.ttf) format("truetype");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap
-    }
-*/
-
-/*
-@font-face {
-  font-family: Helvetica Now Display;
-  src: url(../fonts/HelveticaNowDisplay-MdIt_1.eot);
-  src: url(../fonts/HelveticaNowDisplay-MdIt_1.eot?#iefix) format("embedded-opentype"), url(../fonts/HelveticaNowDisplay-MdIt_1.woff2) format("woff2"), url(../fonts/HelveticaNowDisplay-MdIt_1.woff) format("woff"), url(../fonts/HelveticaNowDisplay-MdIt_1.ttf) format("truetype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap
-}
-*/
 
 @font-face {
   font-family: Helvetica Now Display;
@@ -88,57 +67,6 @@
   font-style: normal
 }
 
-/*плавная загрузка страниц*/
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fade-in {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-body {
-  -webkit-animation: fade-in 1s linear;
-  /* Safari 4+ */
-  -moz-animation: fade-in 1s linear;
-  /* Fx 5+ */
-  -o-animation: fade-in 1s linear;
-  /* Opera 12+ */
-  animation: fade-in 1s linear;
-  /* IE 10+, Fx 29+ */
-}
 
 
 /*!
@@ -1285,7 +1213,7 @@ body {
 
 @import 'info/qr';
 
-@import 'info/keyword';
+@import 'info/keyword'; 
 @import 'info/dashboards';
-//@import 'info/modal';
+@import 'info/menu_old';
 @import 'info/main';

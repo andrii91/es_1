@@ -153,6 +153,7 @@ $spacers: map-merge(
     '5-5': ($spacer * 4),
     6: ($spacer * 4.5),
     7: ($spacer * 5),
+    8: ($spacer * 7),
     10: ($spacer * 10)
   ),
   $spacers
@@ -165,6 +166,7 @@ $sizes: map-merge(
     25: 25%,
     50: 50%,
     60: 60%,
+    65: 65%,
     75: 75%,
     85: 85%,
     100: 100%,
@@ -308,10 +310,11 @@ $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 3.75 !default;
 $h2-font-size:                $font-size-base * 3.125 !default;
-$h3-font-size:                $font-size-base * 2.75 !default;
-$h4-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+
 
 $headings-margin-bottom:      $spacer !default;
 $h1-margin-bottom:            $spacer * 1.5 !default;

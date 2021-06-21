@@ -527,52 +527,56 @@
     </div>
   </footer>
 
-  <div class="popup" id="modal_qr">
-    <div class="madal_qr-img">
-      <img src="images/qr_modal_img.webp" alt="">
-    </div>
-    <h2 class="modal_qr-title">A pack of 75 Amazon packaging templates</h2>
-    <form action="#" id="modal_qr-form" method="post">
-      <div class="modal__form__block">
-        <label class="inp-form__wrapper label-parent valid-label">
-          <input type="email" name="email" class="inp-form inp-form_email" required="">
-          <span class="inp-form__label">Enter your email*</span>
-          <span class="inp-form__label label-err">Please enter correct email</span>
-        </label>
-      </div>
-
-      <div class="modal__form__buttons">
-        <button type="submit" class="btn btn-danger btn-submit-qr submit">Get it now</button>
-      </div>
-    </form>
-  </div>
 
 
 
-  <!-- Modal -->
+  <!-- Modal result-success -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content my-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="madal_qr-img">
-          <img src="images/qr_modal_img.webp" alt="">
-        </div>
-        <h2 class="modal_qr-title">A pack of 75 Amazon packaging templates</h2>
+      <div class="flip-card ">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="modal-content shadow-lg my-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="madal_qr-img">
+                <img src="images/qr_modal_img.webp" alt="">
+              </div>
+              <h2 class="modal_qr-title">A pack of 75 Amazon packaging templates</h2>
 
-        <form action="#" id="qr_subscribe-form" class="needs-validation qr_subscribe-form" method="post" novalidate="">
-          <div class="form-group"> <input type="email" name="email" class="form-control form-control-lg inp-form" placeholder="Enter your email" required="required" id="contactEmail">
-            <div class="invalid-feedback"> Please enter your email</div>
+              <form action="#"  class="needs-validation qr_subscribe-form popup_subscribe-form" method="post" novalidate="">
+                <div class="form-group"> <input type="email" name="email" class="form-control form-control-lg inp-form" placeholder="Enter your email" required="required" id="contactEmail">
+                  <div class="invalid-feedback text-left"> Please enter your email</div>
+                </div>
+                <div class="modal__form__buttons">
+                  <button type="submit" class="btn btn-danger btn-submit-qr submit">Get it now</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="modal__form__buttons">
-            <button type="submit" class="btn btn-danger btn-submit-qr submit">Get it now</button>
+          <div class="flip-card-back">
+            <div class="modal-content shadow-lg my-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              
+              <div class="madal_qr-img mt-0 mt-md-10">
+                <svg width="265" height="265" viewBox="0 0 265 265" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M264.458 132.229C264.458 59.2009 205.257 -3.94896e-05 132.229 -3.62975e-05C59.2009 -3.31053e-05 -8.97207e-06 59.2009 -5.77991e-06 132.229C-2.58775e-06 205.257 59.2009 264.458 132.229 264.458C205.257 264.458 264.458 205.257 264.458 132.229Z" fill="#5AC7BF"/><path d="M250.92 132.169C250.92 66.5843 197.754 13.4174 132.169 13.4174C66.5843 13.4174 13.4175 66.5843 13.4175 132.169C13.4175 197.754 66.5843 250.92 132.169 250.92C197.754 250.92 250.92 197.754 250.92 132.169Z" fill="white"/><path d="M119.891 190.512C115.807 190.512 111.89 188.889 109.002 186.001L68.4233 145.424C65.5347 142.536 63.9118 138.618 63.9116 134.533C63.9114 130.449 65.5339 126.531 68.4222 123.642C71.3105 120.754 75.228 119.131 79.3129 119.131C83.3978 119.13 87.3154 120.753 90.204 123.641L118.313 151.75L172.887 80.0222C174.111 78.4126 175.641 77.0599 177.388 76.0415C179.136 75.0231 181.067 74.3588 183.071 74.0866C185.075 73.8145 187.113 73.9397 189.069 74.4552C191.025 74.9706 192.86 75.8663 194.469 77.091C196.079 78.3156 197.432 79.8454 198.45 81.5928C199.468 83.3402 200.133 85.2711 200.405 87.2753C200.677 89.2794 200.552 91.3175 200.036 93.2733C199.521 95.229 198.625 97.0641 197.401 98.6737L132.149 184.436C130.818 186.185 129.129 187.629 127.194 188.67C125.259 189.712 123.123 190.328 120.931 190.476C120.583 190.501 120.236 190.512 119.891 190.512Z" fill="#006C71"/><path d="M119.891 180.908C115.807 180.908 111.89 179.285 109.002 176.397L68.4233 135.82C65.5683 132.924 63.9741 129.018 63.9884 124.952C64.0026 120.886 65.6242 116.99 68.4993 114.115C71.3745 111.24 75.2699 109.618 79.336 109.604C83.402 109.59 87.3087 111.184 90.204 114.039L118.313 142.147L172.886 70.4183C174.111 68.8087 175.641 67.4561 177.388 66.4376C179.136 65.4192 181.067 64.7549 183.071 64.4828C185.075 64.2106 187.113 64.3358 189.069 64.8513C191.025 65.3668 192.86 66.2624 194.469 67.4871C196.079 68.7118 197.431 70.2415 198.45 71.9889C199.468 73.7363 200.133 75.6672 200.405 77.6714C200.677 79.6755 200.552 81.7136 200.036 83.6694C199.521 85.6251 198.625 87.4602 197.4 89.0698L132.149 174.834C130.818 176.582 129.129 178.026 127.194 179.068C125.259 180.11 123.123 180.725 120.93 180.873C120.583 180.896 120.236 180.908 119.891 180.908Z" fill="#5AC7BF"/></svg>
+              </div>
+              
+              <h2 class="h1 mb-4">Success!</h2>
+              <p class="h5 mt-1 font-weight-light mb-0 mb-md-7">We have sent you an email with templates.</p>
+              
+              
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-  
+
+
   <script defer src="js/vendor.js"></script>
   <script defer src="js/app.js"></script>
 </body>
